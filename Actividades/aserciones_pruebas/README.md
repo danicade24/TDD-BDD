@@ -50,7 +50,7 @@ Descripción de funciones:
 - `peek()`: Devuelve el valor del elemento en la parte superior de la pila sin eliminarlo.
 - `is_empty()`: Devuelve True si la pila está vacía y False si no lo está.
 
-Ten en cuenta que todos los métodos, excepto `is_empty()`, operan sobre el elemento que se encuentra en la parte superior de la pila. Por lo tanto, para que tus casos de prueba sean exhaustivos, debe haber dos o más elementos en la pila para garantizar que esté manipulando el elemento superior y no el inferior.
+Ten en cuenta que todos los métodos, excepto `is_empty()`, operan sobre el elemento que se encuentra en la parte superior de la pila. Por lo tanto, para que tus casos de prueba sean exhaustivos, **debe haber dos o más elementos en la pila** para garantizar que esté manipulando el elemento superior y no el inferior.
 
 Puedes verificar al inicio de que las pruebas no pasan con pytest:
 

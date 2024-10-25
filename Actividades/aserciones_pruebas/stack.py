@@ -18,7 +18,7 @@ class Stack:
         
     def peek(self) -> Any:
         """Devuelve el elemento en la parte superior de la pila sin eliminarlo"""
-        return self.items[-1] 
+        return self.items[-1]   # en reversa empieza desde el último elemento de la lista
         
     def is_empty(self) -> bool:
         """Devuelve True si la pila está vacía, de lo contrario devuelve False"""

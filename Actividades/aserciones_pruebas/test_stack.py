@@ -1,35 +1,3 @@
-"""
-from unittest import TestCase
-from stack import Stack
-
-class TestStack(TestCase):
-    """Casos de prueba para la Pila"""
-
-    def setUp(self):
-        """Configuración antes de cada prueba"""
-        self.stack = Stack()
-
-    def tearDown(self):
-        """Limpieza después de cada prueba"""
-        self.stack = None
-
-    def test_push(self):
-        """Prueba de insertar un elemento en la pila"""
-        raise Exception("no implementado")
-
-    def test_pop(self):
-        """Prueba de eliminar un elemento de la pila"""
-        raise Exception("no implementado")
-
-    def test_peek(self):
-        """Prueba de observar el elemento superior de la pila"""
-        raise Exception("no implementado")
-
-    def test_is_empty(self):
-        """Prueba de si la pila está vacía"""
-        raise Exception("no implementado")
-"""
-
 from unittest import TestCase
 from stack import Stack
 
@@ -78,3 +46,9 @@ class TestStack(TestCase):
         stack.push(5)
         assert stack.is_empty() == False  # Después de agregar un elemento, la pila no debe estar vacía
         #raise Exception("no implementado")
+        
+    def test_push2(self):
+        self.stack.push(3)
+        self.assertEqual(self.stack.peek(), 3)
+        self.stack.push(5)
+        self.assertEqual(self.stack.peek(), 5)
